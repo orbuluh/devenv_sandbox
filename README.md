@@ -1,6 +1,6 @@
 # My [devenv](https://devenv.sh/) sandbox
 
-mostly modified from [devenv examples](https://github.com/cachix/devenv/tree/main/examples)
+A reference to recreate my dev environments, mostly modified from [devenv examples](https://github.com/cachix/devenv/tree/main/examples)
 
 ## Prerequist
 

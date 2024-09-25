@@ -1,3 +1,0 @@
-[submodule "LightGBM"]
-	path = LightGBM
-	url = git@github.com:microsoft/LightGBM.git

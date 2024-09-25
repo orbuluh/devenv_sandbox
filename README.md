@@ -5,6 +5,8 @@ A repo to collect devenv environments, mostly modified from [devenv examples](ht
 
 ## Prerequist
 
+- [Really nice nix intro](https://youtu.be/5D3nUU1OVx8?si=OZ2PhDdZtvFGXn0q)
+
 <details>
   <summary>If you haven't install devenv, follow here</summary>
 

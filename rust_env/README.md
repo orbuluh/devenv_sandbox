@@ -1,1 +1,1 @@
-# Rust enviornment
+# The rust book follow through

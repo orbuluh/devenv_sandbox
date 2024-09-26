@@ -1,10 +1,10 @@
-# Env to build lightgbm
+# Env to build GPU lightgbm
 
 
 cuda seems to need g++
 
 ```bash
-cmake  -B build -S . -DUSE_OPENMP=OFF -DUSE_CUDA=ON
+cmake -B build -S . -DUSE_OPENMP=OFF -DUSE_CUDA=ON
 ```
 
 use clang (can't work with cuda though), you can add

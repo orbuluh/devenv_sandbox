@@ -1,2 +1,3 @@
 polars[all]
 graphviz
+xgboost

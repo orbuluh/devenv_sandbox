@@ -7,6 +7,7 @@
   packages = with pkgs; [
     git
     graphviz
+    zlib # required by xgboost
   ];
 
   languages.python = {

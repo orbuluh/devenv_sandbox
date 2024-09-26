@@ -2,7 +2,7 @@
 
 A repo to collect devenv environments, mostly modified from [devenv examples](https://github.com/cachix/devenv/tree/main/examples).
 
-Current plan: individual project will be created in the branch. For example, [xgboost playground](https://github.com/orbuluh/devenv_sandbox/tree/xgboost_playground) is in the branch.
+Current plan: individual project will be created in the branch. For example, [xgboost playground](https://github.com/orbuluh/devenv_sandbox/tree/data_science/xgboost_playground) is in the branch.
 
 Enviornment will be prepared in `main`, and rebase `main` back to individual project accordingly.
 

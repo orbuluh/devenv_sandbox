@@ -2,3 +2,4 @@ polars[all]
 graphviz
 xgboost
 scikit-learn
+kaggle

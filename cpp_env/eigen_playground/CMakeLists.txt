@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14...3.28)
 # Project name and a few useful settings. Other commands can pick up the results
 
 project(
-  ModernCMakeExample
+  EigenPlayground
   VERSION 0.1
   DESCRIPTION "An example project with CMake"
   LANGUAGES CXX)
@@ -47,17 +47,12 @@ include(FetchContent)
 # Accumulator library This is header only, so could be replaced with git
 # submodules or FetchContent
 find_package(Boost REQUIRED)
-# Adds Boost::boost
+find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
-# find_package(fmt QUIET)
-# if(NOT fmt_FOUND)
-#   # If the system library is not found, use FetchContent to download it
-#   FetchContent_Declare(
-#     fmtlib
-#     GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-#     GIT_TAG 11.0.2)
-#   FetchContent_MakeAvailable(fmt)
-# endif()
+# find_package(fmt QUIET) if(NOT fmt_FOUND) # If the system library is not
+# found, use FetchContent to download it FetchContent_Declare( fmtlib
+# GIT_REPOSITORY https://github.com/fmtlib/fmt.git GIT_TAG 11.0.2)
+# FetchContent_MakeAvailable(fmt) endif()
 
 add_subdirectory(util)
 add_subdirectory(some_lib)

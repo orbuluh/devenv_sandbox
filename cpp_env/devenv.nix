@@ -13,6 +13,7 @@
     pkgs.cmake-format
     pkgs.ninja
     #------------------------------------
+    pkgs.eigen
     pkgs.boost
     pkgs.gtest
   ];

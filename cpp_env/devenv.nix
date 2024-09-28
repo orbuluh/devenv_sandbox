@@ -10,6 +10,7 @@
     pkgs.clang_18 ## most C++23
     #------------------------------------
     pkgs.cmake
+    pkgs.cmake-format
     pkgs.ninja
     #------------------------------------
     pkgs.boost

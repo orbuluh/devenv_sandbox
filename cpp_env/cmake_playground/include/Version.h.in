@@ -1,0 +1,5 @@
+// Version.h
+#pragma once
+
+// template file for cmake to substituethe variable
+#define PROJECT_VERSION "@VERSION_FROM_GIT_OFFSET_CNT@"

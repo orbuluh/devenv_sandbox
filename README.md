@@ -4,10 +4,11 @@ A repo to collect devenv environments, mostly modified from [devenv examples](ht
 
 Current plan: individual project will be created in the branch. For example, [xgboost playground](https://github.com/orbuluh/devenv_sandbox/tree/data_science/xgboost_playground) is in the branch.
 
-Enviornment will be prepared in `main`, and rebase `main` back to individual project accordingly.
+Environment will be prepared in `main`, and rebase `main` back to individual project accordingly.
 
+Note that for C++ projects, and for IntelliSense to work and find the path installed in the environment, you need to make workspace from *_env, as the default search path is `${workspaceFolder}/**`. (Or you should change `.vscode/c_cpp_properties.json`'s `includePath`). As devenv will install packages into `.devenv/profile`
 
-## Prerequist
+## Prerequisite
 
 - [Really nice nix intro](https://youtu.be/5D3nUU1OVx8?si=OZ2PhDdZtvFGXn0q)
 

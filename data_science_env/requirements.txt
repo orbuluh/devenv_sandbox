@@ -1,5 +1,8 @@
+pandas
 polars[all]
 graphviz
 xgboost
 scikit-learn
 kaggle
+sympy
+matplotlib

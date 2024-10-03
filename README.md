@@ -2,11 +2,9 @@
 
 A repo to collect devenv environments, mostly modified from [devenv examples](https://github.com/cachix/devenv/tree/main/examples).
 
-Current plan: individual project will be created in the branch. For example, [xgboost playground](https://github.com/orbuluh/devenv_sandbox/tree/data_science/xgboost_playground) is in the branch.
+Current workflow: individual project will be created in the branch. For example, [xgboost playground](https://github.com/orbuluh/devenv_sandbox/tree/data_science/xgboost_playground) is in the branch.
 
-Environment will be prepared in `main`, and rebase `main` back to individual project accordingly.
-
-Note that for C++ projects, and for IntelliSense to work and find the path installed in the environment, you need to make workspace from *_env, as the default search path is `${workspaceFolder}/**`. (Or you should change `.vscode/c_cpp_properties.json`'s `includePath`). As devenv will install packages into `.devenv/profile`
+Environment will be prepared in `main`, and rebase `main` back to individual branch accordingly.
 
 ## Prerequisite
 
@@ -57,3 +55,13 @@ nix-env -iA devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
 - `devenv up` starts processes.
 
 </details>
+
+## Tips Related to vscode with the environments
+
+### C++ projects
+
+For IntelliSense to work and find the path installed in the environment, you need to make workspace from *_env, as the default search path is `${workspaceFolder}/**`. (Or you should change `.vscode/c_cpp_properties.json`'s `includePath`). As devenv will install packages into `.devenv/profile`
+
+### Python projects
+
+Remember to launch the workspace from the *_env folder as well, then for ipython notebook, select the kernel under `.devenv/state/bin/python` (If you can recreate, better do so to make sure all libs are installed).

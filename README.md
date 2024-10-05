@@ -45,6 +45,26 @@ curl -sfL https://direnv.net/install.sh | bash
 nix-env -iA devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
 ```
 
+### Upgrade devenv
+
+not so sure, above install use nix-env, but maybe sometime later I use nix profile for something, and nix-env is no longer usable.
+eventually I do below ...
+
+```bash
+nix profile list | grep devenv   -A 1 -B2
+Index:              0
+Store paths:        /nix/store/24yzpf9qjfn599dsq92sllxx3wdnpznr-devenv-1.1
+
+nix profile remove 0 #  the Index from above
+nix profile install nixpkgs#devenv -I nixpkgs=channel:unstable
+
+nix profile list | grep devenv   -A 1 -B2
+Index:              1
+Flake attribute:    legacyPackages.x86_64-linux.devenv
+Locked flake URL:   github:NixOS/nixpkgs/eeeb90a1dd3c9bea3afdbc76fd34d0fb2a727c7a
+Store paths:        /nix/store/5fm2f0n3839sdh9qlyh8b6ykqlravr9i-devenv-1.3
+```
+
 ### Devenv quick tips
 
 - `devenv shell` activates your developer environment.
